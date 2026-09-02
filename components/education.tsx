@@ -1,5 +1,5 @@
 import { SectionHeading } from "@/components/section-heading"
-import { GraduationCap, BadgeCheck, Clock } from "lucide-react"
+import { GraduationCap, BadgeCheck, Clock, Sparkles } from "lucide-react"
 
 const items = [
   {
@@ -19,6 +19,14 @@ const items = [
     tone: "primary" as const,
   },
   {
+    icon: Sparkles,
+    title: "Google AI Essentials",
+    subtitle: "Google Career Certificate",
+    detail: "Applying AI tools, prompt engineering, and responsible AI practices.",
+    status: "Certified",
+    tone: "primary" as const,
+  },
+  {
     icon: Clock,
     title: "CIA / CISA",
     subtitle: "Professional Audit Credentials",
@@ -34,7 +42,7 @@ export function Education() {
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading eyebrow="Education" title="Education & Certifications" />
 
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {items.map((it) => (
             <article
               key={it.title}

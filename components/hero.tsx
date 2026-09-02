@@ -64,7 +64,7 @@ export function Hero() {
             />
             <div className="relative aspect-square w-64 overflow-hidden rounded-3xl border border-white/10 bg-white/5 md:w-72">
               <Image
-                src="/images/vusi-portrait.png"
+                src="/images/vusi-portrait.jpeg"
                 alt="Portrait of Vusi Thabo Simelane"
                 fill
                 priority

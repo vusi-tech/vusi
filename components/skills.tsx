@@ -12,6 +12,10 @@ const skills = [
   { name: "Financial Reporting", blurb: "Monthly statements and management reports." },
   { name: "General Ledger", blurb: "Ledger entries and account maintenance." },
   { name: "Audit Testing", blurb: "Simulated audit procedures and formal findings." },
+  { name: "Artificial Intelligence", blurb: "Applying AI tools to streamline finance and audit workflows." },
+  { name: "Prompt Engineering", blurb: "Crafting effective prompts to get accurate, useful AI output." },
+  { name: "AI/ML", blurb: "Understanding machine learning concepts and their applications." },
+  { name: "Model Training", blurb: "Preparing data and refining models for better performance." },
 ]
 
 export function Skills() {
