@@ -1,19 +1,15 @@
-import { SectionHeading } from "@/components/section-heading"
-import { Mail, Phone, MapPin, Link2, ArrowUpRight } from "lucide-react"
+import { Mail, Phone, MapPin, ArrowUpRight } from "lucide-react"
 
-// TODO: Replace these placeholder values with Vusi's real contact details.
 const contact = {
-  email: "your.email@example.com",
-  phone: "+27 00 000 0000",
+  email: "thabov49@gmail.com",
+  phone: "073 981 2427",
   location: "Summerfields Estate, Centurion",
-  linkedin: "linkedin.com/in/your-profile",
 }
 
 const items = [
   { icon: Mail, label: "Email", value: contact.email, href: `mailto:${contact.email}` },
   { icon: Phone, label: "Phone", value: contact.phone, href: `tel:${contact.phone.replace(/\s/g, "")}` },
   { icon: MapPin, label: "Location", value: contact.location, href: null },
-  { icon: Link2, label: "LinkedIn", value: contact.linkedin, href: `https://${contact.linkedin}` },
 ]
 
 export function Contact() {
