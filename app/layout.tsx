@@ -1,10 +1,15 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
+import { Inter, Fraunces } from 'next/font/google'
 import './globals.css'
 
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
+const fraunces = Fraunces({ subsets: ['latin'], variable: '--font-fraunces' })
+
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
+  title: 'Vusi Thabo Simelane | Internal Auditing & Finance Professional',
+  description:
+    'Portfolio of Vusi Thabo Simelane — Internal Auditing graduate and finance professional specializing in audit, compliance, and financial reporting.',
   generator: 'v0.app',
   icons: {
     icon: [
@@ -39,8 +44,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className="antialiased">
+    <html lang="en" className={`${inter.variable} ${fraunces.variable} bg-background`}>
+      <body className="font-sans antialiased">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
