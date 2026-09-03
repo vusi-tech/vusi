@@ -1,14 +1,16 @@
-import { Mail, Phone, MapPin, ArrowUpRight } from "lucide-react"
+import { Mail, Phone, MapPin, Linkedin, ArrowUpRight } from "lucide-react"
 
 const contact = {
   email: "thabov49@gmail.com",
   phone: "073 981 2427",
   location: "Summerfields Estate, Centurion",
+  linkedin: "https://www.linkedin.com/in/vusi-simelane",
 }
 
 const items = [
   { icon: Mail, label: "Email", value: contact.email, href: `mailto:${contact.email}` },
   { icon: Phone, label: "Phone", value: contact.phone, href: `tel:${contact.phone.replace(/\s/g, "")}` },
+  { icon: Linkedin, label: "LinkedIn", value: "Connect on LinkedIn", href: contact.linkedin },
   { icon: MapPin, label: "Location", value: contact.location, href: null },
 ]
 
